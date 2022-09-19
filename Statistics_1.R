@@ -151,3 +151,6 @@ rbinom(7, 1, 0.20) #7 simulations of 1 coin flipping
 1-(dbinom(0, 12, 1/6) + dbinom(1, 12, 1/6)) #prob of getting at least 2 sixes when 12 fair dice are rolled
 1-(dbinom(0, 18, 1/6) + dbinom(1, 18, 1/6)+dbinom(2, 18,1/6)) #so on...
 #formula choose(n,x)*(p^(x))*(q^(n-x))
+
+
+
