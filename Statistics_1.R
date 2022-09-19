@@ -152,8 +152,4 @@ rbinom(7, 1, 0.20) #7 simulations of 1 coin flipping
 1-(dbinom(0, 18, 1/6) + dbinom(1, 18, 1/6)+dbinom(2, 18,1/6)) #so on...
 #formula choose(n,x)*(p^(x))*(q^(n-x))
 
-#hola
-#adios amigonaksas
 
-#asadsa
-121dqds
