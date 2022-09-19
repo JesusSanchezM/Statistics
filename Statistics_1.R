@@ -153,4 +153,4 @@ rbinom(7, 1, 0.20) #7 simulations of 1 coin flipping
 #formula choose(n,x)*(p^(x))*(q^(n-x))
 
 #hola
-
+#adios amigonaksas
