@@ -154,3 +154,5 @@ rbinom(7, 1, 0.20) #7 simulations of 1 coin flipping
 
 #hola
 #adios amigonaksas
+
+#asadsa
