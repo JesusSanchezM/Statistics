@@ -153,6 +153,8 @@ rbinom(1, 7, 0.20) #1 simulation of 7 coin flips, prob = 0.20 of heads
 #outcome 2 means that will be 2 heads in average if we toss a coin 7 times
 rbinom(7, 1, 0.20) #7 simulations of 1 coin flipping
 #[1] 0 0 1 0 0 0 1, 1 indicates when we had a head
+a <- replicate(10^3, rbinom(7, 9, 0.20)) 
+ggplot() + geom_bar(aes(a))
 
 1-dbinom(x=0, size=6, prob=1/6) #prob of getting at least 1 sixes when 6 fair dice are rolled
 1-(dbinom(0, 12, 1/6) + dbinom(1, 12, 1/6)) #prob of getting at least 2 sixes when 12 fair dice are rolled
