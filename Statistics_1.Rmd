@@ -2,7 +2,9 @@
 title: "Statistics"
 author: "Jesus Sanchez"
 date: '2022-09-20'
-output: html_document
+output:
+  pdf_document: default
+  html_document: default
 ---
 
 Loading libraries
@@ -14,8 +16,20 @@ library(tidyverse)
 
 if we replicate 7 experiments with 9 different possible values to get in each experiment, with a probability of 0.20 that event "9" happens, our histogram graph will have a bell shape
 
-```{r}
+```{r echo=TRUE}
 a <- replicate(10^3, rbinom(7, 9, 0.20)) 
 ggplot() + geom_bar(aes(a))
 ```
+
+the closer our sample is from our population, the closer to a uniform distribution we'll be
+
+```{r}
+a <- replicate(10^2, (sample(9, 1))) 
+ggplot() + geom_bar(aes(a))
+a <- replicate(10^5, (sample(9, 1))) 
+ggplot() + geom_bar(aes(a))
+sum(a==8)/length(a) 
+table(a)
+```
+
 
