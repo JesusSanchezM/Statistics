@@ -162,7 +162,7 @@ ggplot() + geom_bar(aes(a))
 #formula choose(n,x)*(p^(x))*(q^(n-x))
 
 
-
+1
 
 
 
