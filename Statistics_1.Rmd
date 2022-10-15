@@ -4,7 +4,6 @@ author: "Jesus Sanchez"
 date: '2022-09-20'
 output:
   pdf_document: default
-  html_document: default
 ---
 
 Loading libraries
